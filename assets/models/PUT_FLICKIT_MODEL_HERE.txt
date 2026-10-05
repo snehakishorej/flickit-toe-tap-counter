@@ -1,0 +1,17 @@
+Place the model supplied by Flickit in this directory.
+
+Android:
+  assets/models/flickit_pose.tflite
+
+Then update:
+  lib/src/app_config.dart
+
+Example:
+  static const String modelPath = 'assets/models/flickit_pose.tflite';
+
+The supplied model should be the YOLO Pose model specified by the assignment.
+Do not train a new model.
+
+If the model uses explicit toe/foot keypoints rather than standard COCO
+ankle keypoints, update _footKeypointIndices in:
+  lib/src/toe_tap_detector.dart
